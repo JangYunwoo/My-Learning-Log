@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0px;
+      height: 150px;
+      width: 100%;
+      background-color: #333333;
+      text-align: center;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h4 {
+      position: sticky;
+      top: 0;
+      margin: 0px;
+      height: 40px;
+      width: 100%;
+      background-color: #565656;
+      color: #333333;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      z-index: 1000;
+    }
+
+    .book-container {
+      position: relative;
+      text-align: center;
+      box-sizing: border-box;
+      background-color: #fff;
+      width: 95%;
+      height: 500px;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    .book-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .book-author {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .book-description {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .section-title {
+      top: 0px;
+      background-color: #fff;
+      padding: 0px 20px 20px 0px;
+      font-size: 20px;
+      font-weight: bold;
+      width: 80%;
+      display: flex;
+      justify-content: start;
+    }
+
+    .top-button {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background-color: #333;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .top-button a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .book-list {
+      top: 0px;
+      box-sizing: content-box;
+      width: 350px;
+      height: 1050px;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: start;
+    }
+
+    h4 a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .bookimg {
+      width: 90%;
+      aspect-ratio: 1 / 1;
+    }
+
+    .all-books {
+      display: flex;
+      justify-content: center;
+
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+      color: white;
+      background-color: #333333;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body style="height: 3000px;">
+  <h1>도서 관리 서비스</h1>
+  <h4><a href="#">홈</a>&nbsp;|&nbsp;<a href="#">베스트 셀러</a>&nbsp;|&nbsp;<a href="#">신간 도서</a>&nbsp;|&nbsp;<a href="#">사서
+      추천</a></h4>
+  <div class="all-books">
+    <div class="book-list">
+      <div class="book-container">
+        <div class="section-title">베스트 셀러 목록</div>
+        <img class="bookimg" src="book1.jpg" alt="book1">
+        <h2 class="book-title">도서 제목 1</h2>
+        <p class="book-author">저자 1</p>
+        <p class="book-description">도서 설명 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <div class="book-container">
+        <img class="bookimg" src="book1.jpg" alt="book1">
+        <h2 class="book-title">도서 제목 2</h2>
+        <p class="book-author">저자 2</p>
+        <p class="book-description">도서 설명 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+    </div>
+    <div class="book-list">
+      <div class="book-container">
+        <div class="section-title">신간 도서 목록</div>
+        <img class="bookimg" src="book1.jpg" alt="book1">
+        <h2 class="book-title">도서 제목 3</h2>
+        <p class="book-author">저자 3</p>
+        <p class="book-description">도서 설명 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <div class="book-container">
+        <img class="bookimg" src="book1.jpg" alt="book1">
+        <h2 class="book-title">도서 제목 4</h2>
+        <p class="book-author">저자 4</p>
+        <p class="book-description">도서 설명 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+    </div>
+    <div class="book-list">
+      <div class="book-container">
+        <div class="section-title">사서 추천 도서 목록</div>
+        <img class="bookimg" src="book1.jpg" alt="book1">
+        <h2 class="book-title">도서 제목 5</h2>
+        <p class="book-author">저자 5</p>
+        <p class="book-description">도서 설명 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <div class="book-container">
+        <img class="bookimg" src="book1.jpg" alt="book1">
+        <h2 class="book-title">도서 제목 6</h2>
+        <p class="book-author">저자 6</p>
+        <p class="book-description">도서 설명 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    @ 2023 도서 관리 서비스. All rights reserved.
+  </footer>
+</body>
+</html>

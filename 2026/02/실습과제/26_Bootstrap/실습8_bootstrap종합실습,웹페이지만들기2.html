@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    section img {
+      max-height: 280px;
+      width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center w-100" style="height: 80px;">
+        <img class="h-75" src="images/logo.png" alt="logo">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav" style="gap: 2rem;">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="position-relative">
+    <img class="w-100" src="images/header.jpg" alt="header">
+    <div class="position-absolute top-50 start-50 translate-middle text-center">
+      <p class="display-1 fw-bold text-white">
+        Cinema<br>Community
+      </p>
+      <button class="btn btn-primary text-white fs-5 py-2 px-3 border-0 rounded mt-4">
+        Let's go
+      </button>
+    </div>
+  </div>
+  <p class="display-5 fw-bold text-center mt-5">
+    Used Skills
+  </p>
+  <section class="d-flex justify-content-around align-items-center" style="height:300px;">
+    <div class="text-center">
+      <img src="images/web.png" class="skill-img" alt="web">
+      <p class="fw-bold mb-0">Web</p>
+    </div>
+
+    <div class="text-center">
+      <img src="images/html5.png" class="skill-img" alt="html">
+      <p class="fw-bold mb-0">HTML5</p>
+    </div>
+
+    <div class="text-center">
+      <img src="images/css3.png" class="skill-img" alt="css">
+      <p class="fw-bold mb-0">CSS3</p>
+    </div>
+  </section>
+  <footer
+    class="d-flex w-100 position-fixed bottom-0 text-white bg-primary justify-content-center align-items-center p-3">
+    HTML & CSS project. Created by 장윤우
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
